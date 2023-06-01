@@ -9,7 +9,7 @@ import(
 var db *gorm.DB
 
 func Connect() {
-	d, err := gorm.Open("mysql", "root:root/simplerest?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "root:password@/simplerest?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
